@@ -44,7 +44,7 @@ app.get('/deletar/:id', ( req , res) => {
 })
 
 
-PORT = 3000;
+PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log("server rodando");
